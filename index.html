@@ -6,7 +6,7 @@
   <title>CRM Zwiesel Fortessa | Status & Entscheidungsvorlage</title>
   <meta
     name="description"
-    content="Status- und Entscheidungsvorlage zum CRM-Projekt von Zwiesel Fortessa mit Start-Use-Cases, Kostenrahmen und naechsten Schritten."
+    content="Status- und Entscheidungsvorlage zum CRM-Projekt von Zwiesel Fortessa mit Start-Use-Cases, Kostenrahmen und nächsten Schritten."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,9 +47,7 @@
       font-size: 16px;
       line-height: 1.6;
       color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(141, 198, 63, 0.14), transparent 28%),
-        linear-gradient(180deg, #fbfcf8 0%, #f5f7f1 24%, #ffffff 100%);
+      background: #f7f8f4;
     }
 
     a {
@@ -126,36 +124,29 @@
 
     .hero-card {
       display: grid;
-      grid-template-columns: 1.35fr 0.9fr;
+      grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.9fr);
       gap: 28px;
       padding: 36px;
-      background: rgba(255, 255, 255, 0.82);
+      background: #ffffff;
       border: 1px solid rgba(216, 221, 209, 0.88);
       border-radius: 32px;
       box-shadow: var(--shadow);
       overflow: hidden;
-      position: relative;
-      isolation: isolate;
     }
 
-    .hero-card::after {
-      content: "";
-      position: absolute;
-      inset: auto -60px -80px auto;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(141, 198, 63, 0.22), rgba(141, 198, 63, 0));
-      z-index: -1;
+    .hero-copy {
+      min-width: 0;
     }
 
     .hero-copy h1 {
       font-family: "Poppins", sans-serif;
-      font-size: clamp(34px, 5vw, 58px);
-      line-height: 1.02;
+      font-size: clamp(34px, 4.5vw, 56px);
+      line-height: 1.06;
       color: var(--ink);
       margin: 10px 0 16px;
-      max-width: 12ch;
+      max-width: 11ch;
+      hyphens: auto;
+      overflow-wrap: break-word;
     }
 
     .hero-copy p {
@@ -190,7 +181,7 @@
 
     .button-primary {
       color: #fff;
-      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      background: var(--green);
       box-shadow: 0 12px 24px rgba(100, 143, 27, 0.25);
     }
 
@@ -260,7 +251,7 @@
       display: block;
       padding: 14px 16px;
       border-radius: 18px;
-      background: rgba(255, 255, 255, 0.84);
+      background: #ffffff;
       border: 1px solid rgba(216, 221, 209, 0.85);
       color: var(--ink);
       font-weight: 600;
@@ -273,7 +264,7 @@
 
     .section {
       margin-top: 34px;
-      background: rgba(255, 255, 255, 0.88);
+      background: #ffffff;
       border: 1px solid rgba(216, 221, 209, 0.88);
       border-radius: 28px;
       box-shadow: var(--shadow);
@@ -314,7 +305,7 @@
       align-items: center;
       justify-content: center;
       color: #fff;
-      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      background: var(--green);
     }
 
     .section-head h2 {
@@ -335,7 +326,7 @@
       padding: 18px 20px;
       border-left: 4px solid var(--green);
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      background: linear-gradient(90deg, rgba(141, 198, 63, 0.16), rgba(141, 198, 63, 0.05));
+      background: var(--green-light);
     }
 
     .insight strong {
@@ -418,7 +409,7 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #fff;
-      background: linear-gradient(135deg, var(--forest), #445e24);
+      background: var(--forest);
       padding: 14px 16px;
     }
 
@@ -458,7 +449,7 @@
       align-items: start;
       padding: 22px 22px 18px;
       color: #fff;
-      background: linear-gradient(140deg, #20291a, #405626);
+      background: var(--forest);
     }
 
     .package-head h3 {
@@ -707,12 +698,12 @@
           <h1>CRM-Status mit klarer Entscheidungsgrundlage</h1>
           <p>
             Das CRM-Projekt ist fachlich und technisch weit vorbereitet. Vor dem Start des
-            3-Monats-POC muessen noch drei Punkte geklaert werden: aktualisiertes HubSpot-Angebot,
+            3-Monats-POC müssen noch drei Punkte geklärt werden: aktualisiertes HubSpot-Angebot,
             Lizenzentscheidung und interne CRM-Ressource.
           </p>
           <div class="hero-actions">
             <button class="button button-primary" onclick="window.print()">Als PDF speichern</button>
-            <a class="button button-secondary" href="#entscheidung">Zu den naechsten Schritten</a>
+            <a class="button button-secondary" href="#entscheidung">Zu den nächsten Schritten</a>
           </div>
         </div>
         <div class="hero-panel">
@@ -721,7 +712,7 @@
             <p>
               Die geplante Consumer-Plattform mit vier Marken und einer gemeinsamen Experience
               braucht Kundensegmentierung, Cross-Selling-Logik und Personalisierung. Der CRM-POC
-              schafft dafuer die Datenbasis und belastbare Learnings vor dem Plattform-Launch.
+              schafft dafür die Datenbasis und belastbare Learnings vor dem Plattform-Launch.
             </p>
           </article>
           <article class="hero-stats">
@@ -737,7 +728,7 @@
               </div>
               <div class="stat">
                 <div class="stat-value">3</div>
-                <div>Start-Use-Cases fuer einen messbaren POC</div>
+                <div>Start-Use-Cases für einen messbaren POC</div>
               </div>
             </div>
           </article>
@@ -763,13 +754,13 @@
               <h2>Weit vorbereitet, drei Punkte offen</h2>
             </div>
             <p>
-              Konzept, Systemwahl und Partnerbild stehen. Fuer den Start fehlen nur noch die
-              formale Freigabe, die HubSpot-Lizenzentscheidung und eine geklaerte interne Ressource.
+              Konzept, Systemwahl und Partnerbild stehen. Für den Start fehlen nur noch die
+              formale Freigabe, die HubSpot-Lizenzentscheidung und eine geklärte interne Ressource.
             </p>
           </div>
 
           <div class="insight">
-            <strong>Kernaussage:</strong> Nach Klaerung der offenen Punkte kann der CRM-POC ohne
+            <strong>Kernaussage:</strong> Nach Klärung der offenen Punkte kann der CRM-POC ohne
             weitere Konzeptphase starten.
           </div>
 
@@ -792,14 +783,14 @@
               <div class="status-icon">✓</div>
               <div>
                 <div class="label">Implementierungspartner</div>
-                <div class="value">emerve GmbH, Koeln, HubSpot Platinum Partner</div>
+                <div class="value">emerve GmbH, Köln, HubSpot Platinum Partner</div>
               </div>
             </article>
             <article class="card status-card">
               <div class="status-icon">✓</div>
               <div>
                 <div class="label">Gesamtverantwortung</div>
-                <div class="value">active value GmbH, Duesseldorf</div>
+                <div class="value">active value GmbH, Düsseldorf</div>
               </div>
             </article>
             <article class="card status-card">
@@ -840,7 +831,7 @@
                   <td>April 2025</td>
                 </tr>
                 <tr>
-                  <td>Kick-off Workshop CRM-Strategie (Praesentation)</td>
+                  <td>Kick-off Workshop CRM-Strategie (Präsentation)</td>
                   <td>8. Mai 2025</td>
                 </tr>
                 <tr>
@@ -866,10 +857,10 @@
           <div class="section-head">
             <div>
               <div class="section-kicker"><span>2</span> Start-Use-Cases</div>
-              <h2>Drei schnelle Hebel fuer messbaren CRM-Impact</h2>
+              <h2>Drei schnelle Hebel für messbaren CRM-Impact</h2>
             </div>
             <p>
-              Die Auswahl fokussiert auf Umsatzpotenzial, geringe technische Komplexitaet und eine
+              Die Auswahl fokussiert auf Umsatzpotenzial, geringe technische Komplexität und eine
               schnelle Erfolgsmessung im POC.
             </p>
           </div>
@@ -878,19 +869,19 @@
             <article class="card">
               <div class="label">Use Case 1</div>
               <div class="value">Warenkorbabbruch</div>
-              <p style="margin-top: 10px;">Rueckgewinnung von Nutzern mit klarer Kaufabsicht ueber automatisierte, zeitlich gesteuerte E-Mail-Sequenzen.</p>
+              <p style="margin-top: 10px;">Rückgewinnung von Nutzern mit klarer Kaufabsicht über automatisierte, zeitlich gesteuerte E-Mail-Sequenzen.</p>
               <div class="kpi">Conversion Rate · Umsatz</div>
             </article>
             <article class="card">
               <div class="label">Use Case 2</div>
-              <div class="value">Reaktivierung inaktiver Kaeufer</div>
-              <p style="margin-top: 10px;">Aktivierung von Bestandskunden auf Basis ihrer Bestellhistorie und laengerer Kaufpausen.</p>
+              <div class="value">Reaktivierung inaktiver Käufer</div>
+              <p style="margin-top: 10px;">Aktivierung von Bestandskunden auf Basis ihrer Bestellhistorie und längerer Kaufpausen.</p>
               <div class="kpi">Wiederkaufsrate · Umsatz</div>
             </article>
             <article class="card">
               <div class="label">Use Case 3</div>
               <div class="value">Post-Purchase Cross-Sell</div>
-              <p style="margin-top: 10px;">Erhoehung des Customer Lifetime Value durch passende Produktempfehlungen direkt nach dem Kauf.</p>
+              <p style="margin-top: 10px;">Erhöhung des Customer Lifetime Value durch passende Produktempfehlungen direkt nach dem Kauf.</p>
               <div class="kpi">Folgekaufquote · Warenkorbwert</div>
             </article>
           </div>
@@ -906,7 +897,7 @@
             </div>
             <p>
               Die Kalkulation basiert auf einem klar definierten B2C-POC mit HubSpot Marketing Hub
-              Professional und anschliessender laufender Weiterentwicklung.
+              Professional und anschließender laufender Weiterentwicklung.
             </p>
           </div>
 
@@ -925,11 +916,11 @@
             </div>
             <div class="premise warn">
               <div class="dot"></div>
-              <div>Vorliegende Angebotslinks sind abgelaufen; neues Angebot muss vor Vertragsabschluss ueber HubSpot oder emerve angefordert werden</div>
+              <div>Vorliegende Angebotslinks sind abgelaufen; neues Angebot muss vor Vertragsabschluss über HubSpot oder emerve angefordert werden</div>
             </div>
             <div class="premise">
               <div class="dot"></div>
-              <div>Ausschliesslich B2C-Fokus im POC; B2B ist spaeter jederzeit nachruestbar</div>
+              <div>Ausschließlich B2C-Fokus im POC; B2B ist später jederzeit nachrüstbar</div>
             </div>
             <div class="premise">
               <div class="dot"></div>
@@ -956,7 +947,7 @@
                   <li><span class="bullet">✓</span><span>DSGVO- und Opt-in-Logik sauber abgebildet</span></li>
                   <li><span class="bullet">✓</span><span>Drei automatisierte E-Mail-Strecken live</span></li>
                   <li><span class="bullet">✓</span><span>Reporting-Dashboard mit KPIs eingerichtet</span></li>
-                  <li><span class="bullet">✓</span><span>Erste messbare Ergebnisse und Empfehlungen fuer Phase 2</span></li>
+                  <li><span class="bullet">✓</span><span>Erste messbare Ergebnisse und Empfehlungen für Phase 2</span></li>
                 </ul>
               </div>
             </article>
@@ -991,16 +982,16 @@
           <div class="section-head">
             <div>
               <div class="section-kicker"><span>4</span> Entscheidung</div>
-              <h2>Naechste Schritte fuer einen Start noch im April 2026</h2>
+              <h2>Nächste Schritte für einen Start noch im April 2026</h2>
             </div>
             <p>
-              Fuer einen zeitnahen Kickoff braucht es jetzt vor allem Freigabe, Lizenzentscheidung
+              Für einen zeitnahen Kickoff braucht es jetzt vor allem Freigabe, Lizenzentscheidung
               und operative Verantwortlichkeit auf Kundenseite.
             </p>
           </div>
 
           <div class="table-wrap">
-            <table aria-label="Entscheidung und naechste Schritte">
+            <table aria-label="Entscheidung und nächste Schritte">
               <thead>
                 <tr>
                   <th>#</th>
@@ -1025,8 +1016,8 @@
                 <tr>
                   <td>3</td>
                   <td>
-                    Klaerung der internen CRM-Ressource bei Zwiesel Fortessa
-                    <div class="decision-note">Optional kann active value temporaer einen Freelancer mit HubSpot- und E-Commerce-Expertise bereitstellen.</div>
+                    Klärung der internen CRM-Ressource bei Zwiesel Fortessa
+                    <div class="decision-note">Optional kann active value temporär einen Freelancer mit HubSpot- und E-Commerce-Expertise bereitstellen.</div>
                   </td>
                   <td><span class="tag warn">ZF · KW 17</span></td>
                 </tr>
@@ -1044,7 +1035,7 @@
 
     <footer class="footer">
       <div class="footer-bar">
-        <span>active value GmbH · Duesseldorf · April 2026</span>
+        <span>active value GmbH · Düsseldorf · April 2026</span>
         <span>Alle Preise zzgl. MwSt. · Vertraulich</span>
       </div>
     </footer>
